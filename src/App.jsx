@@ -1,10 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { reverseArray } from './js/Practise'
 
 function App() {
   const [count, setCount] = useState(0)
+  let a = [1,2,3,4,5];
+  const [reversed, setReversed] = useState([]) 
+  useEffect(()=> {
+ const b = reverseArray([...a]);  
+  console.log(b, "g");
+   setReversed(b);
+  }, [])
 
   return (
     <>
@@ -23,7 +31,8 @@ function App() {
         </button>
         <p>
           {/* Edit <code>src/App.jsx</code> and save to test HMR */}
-          hello pav
+          {/* hello pavithra */}
+          {reversed}
         </p>
       </div>
       <p className="read-the-docs">
