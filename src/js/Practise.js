@@ -14,3 +14,9 @@ export const reverseArray = (arr) => {
 
   return arr;
 }
+
+
+export const builInSorting = (arr) => {
+  arr.sort((a, b) => a-b);
+  return arr;
+}
