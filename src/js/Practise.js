@@ -1,4 +1,3 @@
-import { ASC } from "./Constants";
 
 // import { startTransition } from "react";
 export const reverseArray = (arr) => {
@@ -76,6 +75,8 @@ export const insertionSorting = (arr, type) => {
   }
   return arr;
 }
+
+console.log(insertionSorting([2,1,4,3], 'asc'));
 
 
 

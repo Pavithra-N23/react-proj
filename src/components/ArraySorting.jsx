@@ -22,10 +22,10 @@ const ArraySorting = () => {
         BubbleSort descending: {bubbleSortDesc.join(", ")};
       </div>
         <div>
-        Selection sort descending: {selectionSort.join(", ")};
+        Selection sort ascending: {selectionSort.join(", ")};
       </div>
         <div>
-        Insertion sort descending: {insertionSort.join(", ")};
+        Insertion sort ascending: {insertionSort.join(", ")};
       </div>
     </div>
   );
