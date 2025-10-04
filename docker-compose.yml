@@ -5,7 +5,32 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - "3001:5173"
+      - "3010:3010"   # Custom Node HTTP server
     container_name: vite-react-container
     volumes:
       - .:/app
       - /app/node_modules
+
+
+  #     services:
+  # web:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.dev
+  #   ports:
+  #     - "3001:5173"
+  #   container_name: vite-react-container
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules
+
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.server
+  #   ports:
+  #     - "3010:3010"
+  #   container_name: node-server-container
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules

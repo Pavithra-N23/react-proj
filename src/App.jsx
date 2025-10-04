@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import reactLogo from './Practise/assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
-import { reverseArray } from './js/Practise'
-import ArraySorting from './components/ArraySorting'
+import { reverseArray } from './Practise/js/Practise'
+import ArraySorting from './Practise/components/ArraySorting'
 
 function App() {
   const [reversed, setReversed] = useState([]) 

@@ -15,8 +15,15 @@ FROM nginx:alpine
 # Copy the build output to replace the default nginx contents
 COPY --from=build /app/dist /usr/share/nginx/html
 
+# Install concurrently to run vite + server
+RUN npm install -g concurrently
+
 # Expose port
 EXPOSE 80
+EXPOSE 3010
+
 
 CMD ["nginx", "-g", "daemon off;"]
+CMD ["concurrently", "npm run dev", "node server.cjs"]
+
 

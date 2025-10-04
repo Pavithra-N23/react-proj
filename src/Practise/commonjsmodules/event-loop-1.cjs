@@ -1,5 +1,5 @@
 
-const fs= require("fs");
+const fs = require("fs");
 
 setImmediate(()=> console.log("set immediate"));
 
